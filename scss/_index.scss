@@ -1,0 +1,325 @@
+body{
+    background-color: $primary-dark;
+    color: white;
+  
+    margin-left: 96px;
+    margin-right: 96px;
+    font-family: $bodytext;
+
+    margin-bottom: 32px;
+ 
+
+}
+
+.nav-wrap{
+    display: flex;
+    width: 100%;
+
+    height: 8vh;
+    font-size: 16px;
+
+    .logo-wrap{
+        width: 20%;
+        
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        width: 60%;
+        align-self: center;
+        ul{
+        display: flex;
+        gap: 5%;
+        list-style-type: none;
+        justify-content: center;
+        
+        }
+        .nav-link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            
+        }
+        .nav-link:hover{
+            color: gray;
+        }
+        button{
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+        button:hover{
+            color: gray;
+        }
+    }
+    .right-nav{
+        display: flex;
+ 
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13%;
+        .country{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+    }
+}
+
+
+
+#mega1{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    padding: 5%;
+    margin-top: 3vh;
+    
+}
+
+#mega1 {
+    .title{
+        display: flex;
+        gap: 12px;
+        font-size: medium;
+ 
+        align-items: center;
+        button{
+            width: 25px;
+            height: 25px;
+            background-color: $secondary-color;
+        }
+    }
+    .lists-wrap{
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+}
+
+#mega2{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    padding: 5%;
+    margin-top: 3vh;
+    
+}
+
+#mega2 {
+    .title{
+        display: flex;
+        gap: 12px;
+        font-size: medium;
+ 
+        align-items: center;
+        button{
+            width: 25px;
+            height: 25px;
+            background-color: $secondary-color;
+        }
+    }
+    .lists-wrap{
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+}
+
+
+
+.hero-text-wrap{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+
+}
+video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 80%;
+    z-index: -1; /* Send video behind content */
+    transform: translate(-50%, -50%);
+}
+
+
+.hero{
+    position: relative;
+    z-index: 1;
+
+
+    height: 70vh;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 5%;
+    .left-content{
+        width: 67%;
+        font-size: 56px;
+        font-family: $bigtext;
+        .hero-bot{
+            text-align: end;
+        }
+    }
+    .right-content{
+        width: 33%;
+        font-size: 18px;
+        text-align: justify;
+        
+        hr{
+            margin-bottom: 20px;
+            width: 15%;      
+            border: none;    
+            height: 5px;        
+            background-color: $secondary-color;
+        }
+        .see-btn{
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+
+            button{
+                width: 25px;
+                height: 25px;
+                background-color: $secondary-color;
+                border: none;
+            }
+        }
+    }
+  
+
+}
+
+
+.grid{
+
+    width: 100%;
+    height: 140vh;
+
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  
+    .grid-child{
+        width: 260px;
+        height: 65vh;
+        font-family: $bodytext;
+        h2{
+            font-size: medium;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        h3{
+            font-size:20px;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+    
+    
+    
+    }
+    .one{
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/1.png');
+    }
+    .two{
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/2.png');
+    }
+    .three{
+        background-color: white;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/3.svg');
+        color:black;
+    }
+    .four{
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/4.png');
+    }
+    .five{
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/5.png');
+    }
+    .six{
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/6.png');
+    }
+    .seven{
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/7.png');
+    }
+    .eight{
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-image: url('/assets/8.png');
+    }
+    
+}
+
+.value{
+  
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    h1{
+        font-size: 100px;
+    
+    }
+    p{
+        
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+        button{
+            width: 25px;
+            height: 25px;
+            background-color: $secondary-color;
+            border: none;
+
+        }
+    }
+}
