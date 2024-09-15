@@ -3,12 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="burger.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="theme.js" defer></script>
+    <script src="dropdown.js" defer></script>
+    <script src="burger_drop.js" defer></script>
     <title>ApexNeural</title>
 </head>
 <body>
+    
+    <div class="right-nav-burger">
+        <div class="country">
+            <p>Call our AI Consultant</p>
+            <p>+1 256-685-5681</p>
+        </div>
+    </div>
+     <!--burger menu-->
+    <div class="burger-wrap" >
+  
+        <button id="menu-toggle-btn">
+          <!-- Hamburger Menu Icon -->
+            <label for="menu-toggle" class="hamburger-menu">
+                <i class="fa-solid fa-bars" style="font-size: 24px;"></i>
+            </label>
+        </button>
+        
+    
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="index.html"><div class="nav-link"><p>Home</p></div></a></li>
+                <li><a href="about.html"><div class="nav-link"><p>About</p></div></a></li>
+                <li>
+                    <button class="dropdown-btn" id="drop1_b">
+                        <div class="nav-link"><p>Focus Area</p><i class="fa-solid fa-angle-right"></i></div>
+                    </button>
+                    <ul class="dropdown-content" id="mega1_b">
+                        <div class="title"><h1>What we do</h1><button><i class="fa-solid fa-chevron-right" style="color:white;"></i></button></div>
+                        <div class="lists-wrap">
+                            <li><a href="logistics.html">Logistics & Supply Chain</a></li>
+                            <li><a href="content-management.html">Content Management Solutions</a></li>
+                            <li><a href="industrial.html">Industrial Solutions</a></li>
+                            <li><a href="qa.html">QA & Audit</a></li>
+                            <li><a href="communications.html">Communications & Training</a></li>
+                            <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                            <li><a href="web3.html">Web3 & Blockchain</a></li>
+                            <li><a href="iot.html">Connected Devices & IoT</a></li>
+                            <li><a href="fintech.html">Fintech</a></li>
+                            <li><a href="transformation.html">Digital Transformation</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <button class="dropdown-btn" id="tech-btn_b">
+                        <div class="nav-link"><p>Technologies</p><i class="fa-solid fa-angle-right"></i></div>
+                    </button>
+                    <ul class="dropdown-content" id="tech-drop_b">
+                        <div class="lists-wrap">
+                            <li><a href="digital.html">Digital Solutions</a></li>
+                            <li><a href="cloud.html">Cloud Ecosystem</a></li>
+                            <li><a href="devops.html">DevOps & Security</a></li>
+                            <li><a href="blockchain.html">Blockchain & Web3</a></li>
+                            <li><a href="technology.html">Technology Matrix</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <button class="dropdown-btn" id="industries-btn_b">
+                        <div class="nav-link"><p>Industries</p><i class="fa-solid fa-angle-right"></i></div>
+                    </button>
+                    <ul class="dropdown-content" id="industries-drop_b">
+                        <div class="lists-wrap">
+                            <li><a href="health.html">Health</a></li>
+                            <li><a href="legal.html">Legal</a></li>
+                            <li><a href="banking.html">Banking and Finance</a></li>
+                            <li><a href="lifesciences.html">Life Sciences</a></li>
+                            <li><a href="public.html">Public Sector</a></li>
+                            <li><a href="sports.html">Sports</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <button class="dropdown-btn" id="insights-btn_b">
+                        <div class="nav-link"><p>Insights</p><i class="fa-solid fa-angle-right"></i></div>
+                    </button>
+                    <ul class="dropdown-content" id="insights-drop_b">
+                        <div class="lists-wrap">
+                            <li><a href="blog.html">Blog</a></li>
+                        </div>
+                    </ul>
+                </li>
+
+        
+            </ul>
+        </nav>
+    
+        
+    </div>
+    
+    <!--burger menu -->
     <div class="nav-wrap">
         <div class="logo-wrap">
             <i class="fa-solid fa-chevron-right" style="color:#0505B6;"></i>
@@ -51,7 +146,7 @@
                             <li><a href="web3.html">Web3 & Blockchain</a></li>
                             <li><a href="iot.html">Connected Devices & IoT</a></li>
                             <li><a href="fintech.html">Fintech</a></li>
-                            <li><a href="digital-transformation.html">Digital Transformation</a></li>
+                            <li><a href="transformation.html">Digital Transformation</a></li>
 
                         </div>
                        
@@ -123,6 +218,8 @@
             </div>
         </div>
     </div>
+    <br>
+
     <div class="sub-menu">
         <h2>About Us</h2>
         <ul>
@@ -202,12 +299,6 @@
         </div>
     </section>
    
-    
-   
-
-    
-
-   
 
     <footer>
         <div class="left">
@@ -218,6 +309,17 @@
                 <li>Licences</li>
                 <li>Softwares</li>
             </ul>
+            
+            <div class="theme-toggle">
+                <h4>Theme Color</h4>
+                <br>
+                <button id="dark-mode-toggle" class="theme-button">
+                  <i class="fa-solid fa-moon"></i> <!-- Moon icon for dark mode -->
+                </button>
+                <button id="light-mode-toggle" class="theme-button">
+                  <i class="fa-solid fa-sun"></i> <!-- Sun icon for light mode -->
+                </button>
+            </div>
             <h3> &copy; 2024 ApexNeural. All Rights Reserved.</h3>
         </div>
         <div class="img"></div>

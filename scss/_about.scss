@@ -1,12 +1,13 @@
 .sub-menu{
     display: flex;
     background-color: $secondary-color;
-    position: relative;
+    margin-left: -56px;
+    margin-right: -56px;
     height: 8vh;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 10%;
     margin-bottom: 6%;
-    position: sticky;
+
     
     h2{
         padding-left: 5%;
@@ -27,11 +28,20 @@
     }
 }
 
+
+
+.burger-wrap{
+    display: none;
+}
+
+
 .sub-hero{
+    margin-top: 10%;
     display: flex;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     gap: 5%;
+   
     .left{
         width: 50%;
         height: 60vh;
@@ -48,29 +58,33 @@
         width: 50%;
         gap: 10%;
         h1{
-            font-size: 48px;
+            font-size: 42px;
             font-family: $bigtext;
         }
         h2{
+            font-family: $bodytext;
            
-            font-size: 12;
+            font-size: 16px;
           
         }
 
     }
+
 .about-grid{
-    margin-top: 5%;
+    margin-top: 10%;
     width: 100%;
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10%;
 
     img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     h1{
         font-size:56px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
        
     hr{
@@ -82,14 +96,18 @@
     }
     .item-wrap{
         width: 100%;
-        height: 80vh;
+        height: fit-content;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 5%;
+  
        
         div{
            
             width: 25%;
             height: 40vh;
+            margin-bottom: 10%;
             h1{
                 font-size: 64px;
             }
@@ -97,141 +115,10 @@
     }
 }
 
-.sub-gallery1{
-    hr{
-        margin-bottom: 10px;
-        width: 15%;      
-        border: none;    
-        height: 5px;        
-        background-color: $secondary-color;
-    }
-    .lunchbox{
-        display: grid;
-        height: 100vh;
-    
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 5%;
-        column-gap: 5%;
-        padding: 5%;
-        .item1{
-          
-            padding: 5%;
-            display: flex;
-            flex-direction: column;
-           
-            grid-column: 1;
-            grid-row: span 2; 
-            background-color: $accent-color;
-            img{
-                margin-top: 30px;
-                height: 30vh;
-            }
-              
-        }
-        .item2{
-            gap: 5%;
-            padding: 5%;
-            background-color: $accent-color;
-        }
-        .item3{
-            gap: 5%;
-            padding: 5%;
-            background-color: $accent-color;
-        }
-        .item4{
-            gap: 5%;
-            padding: 5%;
-            background-color: $accent-color;
-            display: flex;
-            flex-direction: column;
-           
-            grid-column: 2;
-            grid-row: 2 / 4;
-            
-              
-        }
-
-    }
-}
-
-.sub-content{
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-   
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-    justify-content: center;
-    align-items: center;
-    
-    h1{
-        font-size: 48px;
-
-    }
-    h2{
-        font-size: 16px;
-    }
-    button{
-        width: 200px;
-        height: 40px;
-        background-color: $secondary-color;
-        border: none;
-        color: white;
-    }
-
- 
-}
-
-.sub-gallery2{
-    margin-top: 5%;
-
-    h1{
-        font-size: 48px;
-        width: 60%;
-    }
-    .item-wrap{
-        margin-top: 3%;
-        width: 100%;
-        height: 60vh;
-        
-        display: flex;
-        gap: 5%;
-        div{
-            display: flex;
-            flex-direction: column;
-            gap: 2%;
-            padding:20px;
-            background-size: cover;
-            background-position: center; 
-            background-repeat: no-repeat;
-            
-           
-        }
-        .item1{
-            background-image: url('/assets/1.png');
-        }
-        .item2{
-            background-image: url('/assets/1.png');
-        }
-        .item3{
-            background-image: url('/assets/1.png');
-        }
-        .item4{
-            background-image: url('/assets/1.png');
-        }
-
-    }
-}
 
 .ecosystem {
     width: 100%;
-    height: 80vh;
-
-
+    height: fit-content;
     h1 {
         margin-top: 30px;
         font-size: 48px;
@@ -240,15 +127,15 @@
     .item-wrap {
         margin-top: 30px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 20px;
 
         div {
-            width: 100%;
      
 
             img {
-                width: 300px;
+                width: 250px;
                 height: 60vh;
                 object-fit: cover; // Maintain aspect ratio while covering the area
             }
@@ -268,8 +155,572 @@
 .story{
     h1{
         font-size: 42px;
-        color: $secondary-color;
         margin-bottom: 5%;
     }
    
+}
+
+/*burger*/
+
+@media (min-width: 500px) and (max-width: 800px) {   
+    body{
+        margin-top: 52px;
+        margin-left: 52px;
+        margin-right: 52px;
+
+    }
+    .nav-wrap{
+
+        display: none;
+    }
+
+    
+    footer{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 32px;
+    
+        .left{
+        
+    
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+        
+            h1{
+                padding-bottom: 5%;
+                font-size: large;
+            }
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                list-style-type: none;
+           
+                font-size: 12px;
+    
+       
+    
+            }
+            h3{
+                
+                padding-top: 28%;
+                font-size: 12px;
+            }
+        }
+        .img{
+            width: 100%;
+            height: 30vh;
+            background-image: url('/assets/footer-img.png');
+            background-size: cover; 
+            
+            background-repeat: no-repeat; 
+        }
+    }
+
+
+    .burger-wrap {
+    
+        width: 300px;
+        .nav-link {
+          display: flex;
+          gap: 10px;
+        }
+      
+        li {
+          list-style-type: none;
+          border-bottom: 1px solid black;
+          height: 60px;
+          width: 100%; // Adjust this value as needed
+          display: flex;
+          align-items: center;
+          padding: 10px;
+        }
+      
+        display: block;
+        position: absolute;
+        z-index: 9999;
+      
+        .sidebar {
+          display: none;
+          width: 300px;
+          background-color: #202020;
+          height: fit-content;
+          padding-bottom: 30px;
+        }
+      
+        button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          font-size: medium;
+     
+
+        }
+    }
+      
+    
+
+    
+
+
+}
+
+/*burger*/
+@media (min-width: 320px) and (max-width: 500px) {   
+    body{
+        margin-top: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+
+    }
+    .nav-wrap{
+
+        display: none;
+    }
+
+    footer{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    
+        .left{
+        
+    
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+        
+            h1{
+                padding-bottom: 5%;
+                font-size: large;
+            }
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                list-style-type: none;
+           
+                font-size: 12px;
+    
+       
+    
+            }
+            h3{
+                
+                padding-top: 28%;
+                font-size: 12px;
+            }
+        }
+        .img{
+            width: 100%;
+            height: 30vh;
+            background-image: url('/assets/footer-img.png');
+            background-size: cover; 
+            
+            background-repeat: no-repeat; 
+        }
+    }
+
+
+    .burger-wrap {
+       
+        font-size: 14px;
+        display: block;
+    
+        width: 200px;
+        .nav-link {
+          display: flex;
+          gap: 10px;
+        }
+      
+        li {
+          list-style-type: none;
+          border-bottom: 1px solid black;
+          height: 40px;
+          width: 100%; // Adjust this value as needed
+          display: flex;
+          align-items: center;
+       
+        }
+      
+        
+        position: absolute;
+        z-index: 9999;
+      
+        .sidebar {
+         
+          display: none;
+          width: 200px;
+          background-color: #202020;
+          height: fit-content;
+          padding-bottom: 30px;
+        }
+      
+        button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          font-size: 14px;
+          
+
+        }
+    }
+      
+    
+
+    
+
+
+}
+
+@media (min-width: 500px) and (max-width: 830px) {   
+    .sub-menu{
+   
+        margin-left: -56px;
+        margin-right: -56px;
+
+
+        align-items: center;
+
+        h2{
+            padding-left: 5%;
+            width: 30%;
+        }
+       
+        ul{
+            display: flex;
+            gap: 5%;
+            width: 65%;
+            justify-content: end;
+            align-items: center;
+            font-size: 12px;
+          
+            text-decoration: none;
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+
+    .sub-hero{
+        margin-top: 10%;
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        gap: 5%;
+
+    
+        .left{
+            width: 50%;
+            height: 60vh;
+            background-image: url("/assets/1.png"); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+
+        
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 10%;
+            h1{
+                font-size: 32px;
+          
+            }
+            h2{
+     
+            
+                font-size: 14px;
+            
+            }
+
+        }
+    }
+    .about-grid{
+     
+ 
+
+       
+        .item-wrap {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-wrap: nowrap; // Disable wrapping to force horizontal layout
+            justify-content: flex-start; // Align items to the left
+            gap: 5%;
+            overflow-x: auto; // Enable horizontal scrolling
+            -webkit-overflow-scrolling: touch; // Smooth scrolling on mobile
+            scroll-behavior: smooth; // Smooth scrolling effect
+          
+            div {
+              width: 200px;
+              flex: 0 0 25%; // Prevent shrinking and set a fixed width
+              height: 50vh;
+              margin-bottom: 10%;
+          
+              h1 {
+                font-size: 64px;
+              }
+            }
+          }
+          
+    }
+
+
+    .ecosystem {
+        width: 100%;
+        height: fit-content;
+      
+        h1 {
+          margin-top: 30px;
+          font-size: 32px;
+        }
+      
+        .item-wrap {
+          margin-top: 30px;
+          display: flex;
+          flex-wrap: nowrap; // Prevents items from wrapping to the next line
+          justify-content: flex-start; // Aligns items to the left
+          gap: 20px;
+          font-size: 14px;
+          overflow-x: auto; // Enables horizontal scrolling
+          -webkit-overflow-scrolling: touch; // Smooth scrolling on touch devices
+          scroll-behavior: smooth; // Smooth scrolling behavior
+      
+          div {
+            flex: 0 0 auto; // Prevent divs from shrinking and set fixed width
+            img {
+              width: 250px;
+              height: 60vh;
+              object-fit: cover; // Maintain aspect ratio while covering the area
+            }
+          }
+        }
+      }
+      
+
+    .divide{
+        border: none;
+        height: 3px;
+        background-color: $secondary-color;
+        margin: 20px 0; 
+        width: 100%; 
+        align-self: center; 
+    }
+
+    .story{
+        font-size: 12px;;
+        text-align: justify;
+        h1{
+            font-size: 32px;
+            margin-bottom: 5%;
+        }
+
+    
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 530px) {   
+    .sub-menu{
+      
+   
+        margin-left: -56px;
+        margin-right: -56px;
+
+
+        align-items: center;
+
+        h2{
+            padding-left: 10%;
+            width: 30%;
+            font-size: 16px;
+        }
+       
+        ul{
+            margin-right: 10px;
+            display: flex;
+            gap: 5%;
+
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            font-size: 8px;
+          
+            text-decoration: none;
+            li{
+                width: 32px;
+
+                text-align: center;
+                list-style-type: none;
+              
+      
+            }
+        }
+    }
+
+    .sub-hero{
+
+        margin-top: 10%;
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        gap: 5%;
+
+    
+        .left{
+            width: 50%;
+            height: 40vh;
+            background-image: url("/assets/1.png"); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+
+        
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 4%;
+            h1{
+                font-size: 24px;
+          
+            }
+            h2{
+     
+            
+                font-size: 10px;
+            
+            }
+
+        }
+    }
+    
+
+    .story{
+        font-size: 10px;;
+        text-align: justify;
+        h1{
+            font-size: 32px;
+            margin-bottom: 5%;
+        }
+
+    
+    }
+
+    
+    .about-grid{
+        h1 {
+            font-size: 32px;
+          }
+
+        .item-wrap {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-wrap: nowrap; // Disable wrapping to force horizontal layout
+            justify-content: flex-start; // Align items to the left
+            gap: 5%;
+            overflow-x: auto; // Enable horizontal scrolling
+            -webkit-overflow-scrolling: touch; // Smooth scrolling on mobile
+            scroll-behavior: smooth; // Smooth scrolling effect
+          
+            div {
+              width: 200px;
+              flex: 0 0 25%; // Prevent shrinking and set a fixed width
+              height: 50vh;
+              margin-bottom: 10%;
+          
+              h1 {
+                font-size: 32px;
+              }
+            }
+          }
+          
+    }
+
+
+    .ecosystem {
+        width: 100%;
+        height: fit-content;
+      
+        h1 {
+          margin-top: 30px;
+          font-size: 26px;
+        }
+      
+        .item-wrap {
+          margin-top: 30px;
+          display: flex;
+          flex-wrap: nowrap; // Prevents items from wrapping to the next line
+          justify-content: flex-start; // Aligns items to the left
+          gap: 20px;
+          font-size: 14px;
+          overflow-x: auto; // Enables horizontal scrolling
+          -webkit-overflow-scrolling: touch; // Smooth scrolling on touch devices
+          scroll-behavior: smooth; // Smooth scrolling behavior
+      
+          div {
+            flex: 0 0 auto; // Prevent divs from shrinking and set fixed width
+            img {
+              width: 250px;
+              height: 60vh;
+              object-fit: cover; // Maintain aspect ratio while covering the area
+            }
+          }
+        }
+      }
+
+      footer{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    
+        .left{
+        
+    
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+        
+            h1{
+                padding-bottom: 5%;
+                font-size: large;
+            }
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                list-style-type: none;
+           
+                font-size: 12px;
+    
+       
+    
+            }
+            h3{
+                
+                padding-top: 15%;
+                font-size: 12px;
+            }
+        }
+        .img{
+            width: 100%;
+            height: 30vh;
+            background-image: url('/assets/footer-img.png');
+            background-size: cover; 
+            
+            background-repeat: no-repeat; 
+        }
+    }
+
 }
