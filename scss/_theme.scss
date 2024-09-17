@@ -1,6 +1,6 @@
 :root {
-    --background-color: white;
-    --text-color: black;
+    --background-color: black!important;
+    --text-color: white!important;
   }
   
   body {
@@ -32,14 +32,29 @@
     color: white!important;
   }
 
-  .sub-gallery2{
+  .trend{
     color: white!important;
   }
+  
 
   .title{
     color: white!important;
   }
 
+  .sidebar .nav-link{
+    color: white!important;
+  }
 
+  .theme-toggle{
+    display: none;
+  }
+
+  footer{
+    margin-top: 30px!important;
+  }
+
+  
+
+ 
   
   

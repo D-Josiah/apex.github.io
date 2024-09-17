@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
     <script src="burger.js" defer></script>
     <script src="script.js" defer></script>
     <script src="theme.js" defer></script>
     <script src="dropdown.js" defer></script>
     <script src="burger_drop.js" defer></script>
+    <script src="sub_mega.js" defer></script>
     <title>ApexNeural</title>
 </head>
 <body>
@@ -43,33 +45,22 @@
                     <ul class="dropdown-content" id="mega1_b">
                         <div class="title"><h1>What we do</h1><button><i class="fa-solid fa-chevron-right" style="color:white;"></i></button></div>
                         <div class="lists-wrap">
+                            <li><a href="cloud.html">Cloud</a></li>
                             <li><a href="logistics.html">Logistics & Supply Chain</a></li>
-                            <li><a href="content-management.html">Content Management Solutions</a></li>
+                            <li><a href="content.html">Content Management Solutions</a></li>
                             <li><a href="industrial.html">Industrial Solutions</a></li>
-                            <li><a href="qa.html">QA & Audit</a></li>
-                            <li><a href="communications.html">Communications & Training</a></li>
+                            <li><a href="communication.html">Communications & Training</a></li>
                             <li><a href="cybersecurity.html">Cybersecurity</a></li>
                             <li><a href="web3.html">Web3 & Blockchain</a></li>
-                            <li><a href="iot.html">Connected Devices & IoT</a></li>
-                            <li><a href="fintech.html">Fintech</a></li>
                             <li><a href="transformation.html">Digital Transformation</a></li>
+                            <li><a href="finance.html">Digital Finance</a></li>
+                            <li><a href="engineering.html">Digital Engineering</a></li>
+                            <li><a href="enterprise.html">Enterprise Platforms</a></li>
+                            <li><a href="talent.html">Talent & Consulting</a></li>
                         </div>
                     </ul>
                 </li>
-                <li>
-                    <button class="dropdown-btn" id="tech-btn_b">
-                        <div class="nav-link"><p>Technologies</p><i class="fa-solid fa-angle-right"></i></div>
-                    </button>
-                    <ul class="dropdown-content" id="tech-drop_b">
-                        <div class="lists-wrap">
-                            <li><a href="digital.html">Digital Solutions</a></li>
-                            <li><a href="cloud.html">Cloud Ecosystem</a></li>
-                            <li><a href="devops.html">DevOps & Security</a></li>
-                            <li><a href="blockchain.html">Blockchain & Web3</a></li>
-                            <li><a href="technology.html">Technology Matrix</a></li>
-                        </div>
-                    </ul>
-                </li>
+               
                 <li>
                     <button class="dropdown-btn" id="industries-btn_b">
                         <div class="nav-link"><p>Industries</p><i class="fa-solid fa-angle-right"></i></div>
@@ -79,22 +70,11 @@
                             <li><a href="health.html">Health</a></li>
                             <li><a href="legal.html">Legal</a></li>
                             <li><a href="banking.html">Banking and Finance</a></li>
-                            <li><a href="lifesciences.html">Life Sciences</a></li>
-                            <li><a href="public.html">Public Sector</a></li>
                             <li><a href="sports.html">Sports</a></li>
                         </div>
                     </ul>
                 </li>
-                <li>
-                    <button class="dropdown-btn" id="insights-btn_b">
-                        <div class="nav-link"><p>Insights</p><i class="fa-solid fa-angle-right"></i></div>
-                    </button>
-                    <ul class="dropdown-content" id="insights-drop_b">
-                        <div class="lists-wrap">
-                            <li><a href="blog.html">Blog</a></li>
-                        </div>
-                    </ul>
-                </li>
+                <li><a href="blog.html"><div class="nav-link"><p>Insights</p></div></a></li>
 
         
             </ul>
@@ -106,7 +86,7 @@
     <!--burger menu -->
     <div class="nav-wrap">
         <div class="logo-wrap">
-            <i class="fa-solid fa-chevron-right" style="color:#0505B6;"></i>
+            <img src="assets/logo.png" style="width: 48px;">
         </div>
         <nav>
             <ul>
@@ -137,40 +117,23 @@
                             <button><i class="fa-solid fa-chevron-right" style="color:white;"></i></button>
                         </div>
                         <div class="lists-wrap">
+                            <li><a href="cloud.html">Cloud</a></li>
                             <li><a href="logistics.html">Logistics & Supply Chain</a></li>
-                            <li><a href="content-management.html">Content Management Solutions</a></li>
+                            <li><a href="content.html">Content Management Solutions</a></li>
                             <li><a href="industrial.html">Industrial Solutions</a></li>
-                            <li><a href="qa.html">QA & Audit</a></li>
-                            <li><a href="communications.html">Communications & Training</a></li>
+                            <li><a href="communication.html">Communications & Training</a></li>
                             <li><a href="cybersecurity.html">Cybersecurity</a></li>
                             <li><a href="web3.html">Web3 & Blockchain</a></li>
-                            <li><a href="iot.html">Connected Devices & IoT</a></li>
-                            <li><a href="fintech.html">Fintech</a></li>
                             <li><a href="transformation.html">Digital Transformation</a></li>
-
+                            <li><a href="finance.html">Digital Finance</a></li>
+                            <li><a href="engineering.html">Digital Engineering</a></li>
+                            <li><a href="enterprise.html">Enterprise Platforms</a></li>
+                            <li><a href="talent.html">Talent & Consulting</a></li>
                         </div>
                        
                     </ul>
                 </li>
-                <li>
-                    <button id="tech-btn">
-                        <div class="nav-link">
-                            <p>Technologies</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                    </button>
-                    <ul id="tech-drop" >
-                        <div class="lists-wrap">
-                            <li><a href="digital.html">Digital Solutions</a></li>
-                            <li><a href="cloud.html">Cloud Ecosystem</a></li>
-                            <li><a href="devops.html">DevOps & Security</a></li>
-                            <li><a href="blockchain.html">Blockchain & Web3</a></li>
-                            <li><a href="technology.html">Technology Matrix</a></li>
-                        </div>
-                        
-                       
-                    </ul>
-                </li>
+               
                      
                 <li>
                     <button id="industries-btn">
@@ -184,29 +147,13 @@
                             <li><a href="health.html">Health</a></li>
                             <li><a href="legal.html">Legal</a></li>
                             <li><a href="banking.html">Banking and Finance</a></li>
-                            <li><a href="lifesciences.html">Life Sciences</a></li>
-                            <li><a href="public.html">Public Sector</a></li>
                             <li><a href="sports.html">Sports</a></li>
                         </div>
 
                     </ul>
                 </li>
                      
-                <li>
-                    <button id="insights-btn">
-                        <div class="nav-link">
-                            <p>Insights</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                    </button>
-                    <ul id="insights-drop" >
-                        <div class="lists-wrap">
-                            <li><a href="blog.html">Blog</a></li>
-                       
-                        </div>
-
-                    </ul>
-                </li>
+                <li><a href="blog.html"><div class="nav-link"><p>Insights</p></div></a></li>
                
                 
             </ul>
@@ -223,92 +170,70 @@
     <div class="sub-menu">
         <h2>About Us</h2>
         <ul>
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#approach">Our Approach</a></li>
-            <li><a href="#ecosystem">Our Ecosystem</a></li>
-            <li><a href="#team">Our Team</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#ecosystem">Ecosystem</a></li>
+            <li><a href="#team">Team</a></li>
         </ul>
+        
     </div>
+
+  
 
     <section class="story" id="story">
         <h1>Our Story</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo et totam aut ea, itaque porro officia sit distinctio doloremque ipsum reiciendis unde maxime? Ducimus ea numquam officia mollitia dicta.Tempora nemo delectus nulla voluptatum fugit sunt eligendi dolorum, vitae harum unde eveniet fugiat doloribus possimus quas repudiandae non consequuntur qui. Illum?</h3>
+        <h3>At APEXneural, our journey began with a vision: Building Ecosystems Together. With a foundation built on years of expertise in healthcare, information technology, and strategic talent solutions, we have evolved into a trusted consulting partner. We are passionate about solving complex business challenges through the thoughtful integration of cloud platforms, advanced AI solutions, and a consultative approach to technology and talent management. Our focus is on creating transformative ecosystems that foster growth, innovation, and resilience. Together with our clients, we design systems that drive measurable results and are built to withstand the demands of the future.
+
+
+        </h3>
         <hr class="divide">
 
     </section>
 
 
-    <section class="sub-hero" id="approach">
-        <div class="left">
+    <section class="story" id="approach">
+        <h1>Our Approach</h1>
+        <h3>We are dedicated to a customer-first approach. Our philosophy is simple: we grow when our clients succeed. With a deep understanding of diverse industries, from healthcare to finance and manufacturing, we provide tailor-made solutions that align with each client’s unique challenges and objectives. We don’t believe in a one-size-fits-all strategy. Instead, we focus on listening, collaborating, and ensuring that every project we undertake adds value. Whether it’s staffing, consulting, or digital engineering, we are committed to helping clients thrive in an ever-changing technological landscape.
 
-        </div>
-        <div class="right">
-            <h1>Customer Centric Approach</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sed facere hic, soluta sint tempora sunt natus aspernatur fugiat earum ullam omnis molestiae voluptatum a ad architecto suscipit nihil velit?</h2>
 
-        </div>
-    </section>    
-    <hr class="divide">
-    <section class="ecosystem" id="ecosystem">
+
+        </h3>
+        <hr class="divide">
+
+    </section>   
+   
+    <section class="story" id="ecosystem">
         <h1>Our Ecosystem</h1>
-        <div class="item-wrap">
-            <div>
-                <img src="assets/5.png"></img>
-                <h2>Something</h2>
-                <p>Lorem Ipsum dolor sit amet</p>
-            </div>
-            <div>
-                <img src="assets/5.png"></img>
-                <h2>Something</h2>
-                <p>Lorem Ipsum dolor sit amet</p>
-            </div>
-            <div>
-                <img src="assets/5.png"></img>
-                <h2>Something</h2>
-                <p>Lorem Ipsum dolor sit amet</p>
-            </div>
-        </div>
+        <h3>At the core of APEXneural is our robust ecosystem of technology and cloud partnerships. We work closely with leading platforms like Salesforce, AWS, Microsoft Azure, and Google Cloud, ensuring that our clients always have access to the best tools available. This diverse ecosystem enables us to deliver comprehensive cloud, AI, and data-driven solutions that are scalable, secure, and future-proof. Whether it’s integrating enterprise platforms, enhancing data engineering, or managing cloud infrastructure, our partnerships allow us to seamlessly align our solutions with cutting-edge technology.
+
+
+
+        </h3>
+        <hr class="divide">
+
+    </section>
  
     </section>
 
 
 
-    <section class="about-grid" id="team">
+    <section class="story" id="team">
         <h1>Our Team</h1>
-        <div class="item-wrap">
-            <div >
-                <hr>
-                <img src="assets/2.png"></img>
-                <p>Lore pimsum dolor met</p>
-            </div>
-            <div >
-                <hr>
-                <img src="assets/2.png"></img>
-                <p>Lore pimsum dolor met</p>
-            </div>
-            <div >
-                <hr>
-                <img src="assets/2.png"></img>
-                <p>Lore pimsum dolor met</p>
-            </div>
-            <div >
-                <hr>
-                <img src="assets/2.png"></img>
-                <p>Lore pimsum dolor met</p>
-            </div>
-        </div>
+        <h3>Our team is the cornerstone of APEXneural’s success, bringing together industry leaders and experts from diverse fields including healthcare, technology, legal, and digital transformation. With a wealth of experience in AI, cloud computing, data engineering, and enterprise platforms, they are uniquely positioned to guide clients through complex challenges. Each member of our team brings deep industry knowledge, enabling us to deliver tailored solutions that drive impact. We are passionate about helping organizations harness the right talent and technology to build ecosystems that foster growth, efficiency, and innovation. Together, we collaborate to ensure that our clients stay ahead in a rapidly evolving business environment.
+
+
+
+        </h3>
+        <hr class="divide">
+
     </section>
+ 
+    </section>
+
    
 
     <footer>
         <div class="left">
-            <h1>Let there be change</h1>
-            <ul>
-                <li>Privacy Notice</li>
-                <li>Terms of Service</li>
-                <li>Licences</li>
-                <li>Softwares</li>
-            </ul>
             
             <div class="theme-toggle">
                 <h4>Theme Color</h4>
@@ -322,7 +247,7 @@
             </div>
             <h3> &copy; 2024 ApexNeural. All Rights Reserved.</h3>
         </div>
-        <div class="img"></div>
+       
       
     </footer>
     
